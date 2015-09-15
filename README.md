@@ -2,7 +2,7 @@
 This is the main repository for the SESE Python User Group. Every team members should be able to push/pull (write/read) to the repository. To push/pull, first you have to [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]install git. Then, you have to clone (download) the sese-python-users repository. On your favorite command line program, go to the directory that you would like to clone to repository be located and type,
 
 ```
-git cline https://github.com/sese-python-users/sese-python-users.git
+git clone https://github.com/sese-python-users/sese-python-users.git
 ```
 
 The `sese-python-users` directory is your "local" copy of the group repository. You can do the following to your local reposity.
