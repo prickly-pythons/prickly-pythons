@@ -1,6 +1,16 @@
-# SESE Python User Repositoy
-This is the main repository for the SESE Python User Group.
+# Welcome to the SESE Python User Group
+The SESE Python User Group started as an idea from SESE postdoctoral reserachers and graduate students to have a platform to disscuss and share codes and idears about Python and scientific programing in general to help each other learn more and develop a scientific programing community within SESE. SESE and related personals with any levle of programing exerience are welcome to join the group. Every member is encourage to utilize this platform to help moving the SESE programing community forward!
 
+## About This Repository
+This repository is part of our platform and is the main repository for the SESE Python User Group. Members are encourage to share code templates, examples and tutorials by pushing to the repository. We also encourage members to ask questions, make requests and give suggestions to the group by using GitHub issue tracking functionality.
+
+In addition, we will pick some topics from the repo and discuss them at our weekly lunch meeting (Time TBD). 
+
+## Gitter Chat Room
+In addition, we have a chatroom on [Gitter](https://gitter.im/sese-python-users?utm_source=share-link&utm_medium=link&utm_campaign=share-link) for members to chat and ask questions in realtime. The Gitter chatroom is linked to this repository. It uses your GitHub account as a log-in, no information will be sent to Gitter, and it allow [GitHub Flavor Makrdown](https://help.github.com/articles/github-flavored-markdown/) for codes parsing and the use of `@mention`. There is [a Gitter app](https://gitter.im/apps) available on most operating systems.
+
+## Using the Repository
+### Sharing Your Stuff 
 Every team members should be able to push/pull (write/read) to the repository. To push/pull, first you have to [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Then, you have to clone (download) the sese-python-users repository. On your favorite command line program, go to the directory that you would like to clone to repository be located and type,
 
 ```
@@ -21,3 +31,13 @@ The `sese-python-users` directory is your "local" copy of the group repository. 
     ````
 
 Note that might have to `pull` first before you can `push`.
+
+### Asking Questions via Issue Tracking
+To be updated ...
+
+--
+### Group Admins
+Karen Olsen (@kpolsen), <kpolsen@asu.edu>    
+Piyanat (Boom) Kittiwisit (@piyanatk), <piyanat.kittiwisit@asu.edu>    
+Abhi Rajan (@abhijithrajan), <abhijithrajan@asu.edu>    
+Kimberly Ward-Duong (@spacegal-spiff), <kwardduo@asu.edu>
