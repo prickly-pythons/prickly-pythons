@@ -1,6 +1,9 @@
 # Welcome to the SESE Python User Group
 The SESE Python User Group started as an idea from SESE postdoctoral reserachers and graduate students to have a platform to disscuss and share codes and idears about Python and scientific programing in general to help each other learn more and develop a scientific programing community within SESE. SESE and related personals with any levle of programing exerience are welcome to join the group. Every member is encourage to utilize this platform to help moving the SESE programing community forward!
 
+## Next Meeting
+Will be posted on our landing page: [http://sese-python-users.github.io/](http://sese-python-users.github.io/)
+
 ## About This Repository
 This repository is part of our platform and is the main repository for the SESE Python User Group. Members are encourage to share code templates, examples and tutorials by pushing to the repository. We also encourage members to ask questions, make requests and give suggestions to the group by using GitHub issue tracking functionality.
 
