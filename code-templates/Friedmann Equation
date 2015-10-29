@@ -1,0 +1,27 @@
+# This code will numerically integrate the multiple component Friedmann equation with respect to the scale factor a
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.integrate import quad
+
+
+def FriedmannEqn():
+    
+    #x1 is the matter component, x2 is the cosmological constant component
+    
+    x1 = 0.3
+    x2 = 0.7
+    
+    #Hubble's Constant is in units of km/s/Mpc and t0 is present day in seconds
+    
+    H0 = 70 
+    t0 = 4.42*10**17
+    s = H0*t0
+    
+    s2 = (1)/((x1/a)+(x2*a**2))**0.5
+    
+    quad(lambda a: s2,0,2)
+      
+    
+FriedmannEqn()
