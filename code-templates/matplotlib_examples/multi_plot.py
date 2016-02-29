@@ -15,7 +15,6 @@ BP = np.load('BP.npy')
 # subplot: 2 rows, 2 columns => 4 figures! 
 fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2,2,figsize=(10,8))
 
-
 ### 1st subplot figure! 
 
 # plot histogram
@@ -54,55 +53,55 @@ ax3.set_title("Barometric Pressure vs Time",fontsize=13)
 
 ### 4th subplot figure! 
 
-# plot just the first 24 hours
-BP = BP[0:24]
+# # plot just the first 24 hours
+# BP = BP[0:24]
 
-# offset by 100 kPa
-BP = BP - 100
+# # offset by 100 kPa
+# BP = BP - 100
 
-# x axis is just hours, one per sample
-x = np.arange(len(BP))
+# # x axis is just hours, one per sample
+# x = np.arange(len(BP))
 
-# plot bar chart
-ax4.bar(x, BP, facecolor='#660099', edgecolor='green', alpha=0.5)
+# # plot bar chart
+# ax4.bar(x, BP, facecolor='#660099', edgecolor='green', alpha=0.5)
 
-# add labels + title
-ax4.set_xlabel("Time (hours)")
-ax4.set_ylabel("Barometric Pressure + 100kPa")
-ax4.set_title("Barometric Pressure Bar Chart")
+# # add labels + title
+# ax4.set_xlabel("Time (hours)")
+# ax4.set_ylabel("Barometric Pressure + 100kPa")
+# ax4.set_title("Barometric Pressure Bar Chart")
 
-# grid lines
-ax4.grid(True)
+# # grid lines
+# ax4.grid(True)
 
 ### Alternative 4th subplot figure! 
 
-# import matplotlib.image as mpimg
+import matplotlib.image as mpimg
 
-# # Load image of NGC 2997 from ESO: https://www.eso.org/public/images/eso9921a/
-# img = mpimg.imread('NGC_2997.jpg')
+# Load image of NGC 2997 from ESO: https://www.eso.org/public/images/eso9921a/
+img = mpimg.imread('NGC_2997.jpg')
 
-# ax4.imshow(img,extent=(0,3.4,0,3.4)) 	# image size from webpage
-# ax4.locator_params(nbins=6)	# number of ticks
-# ax4.set_xlim(0,3.4) # force axes range (no whitespace!)
-# ax4.set_ylim(0,3.4) # force axes range (no whitespace!)
+ax4.imshow(img,extent=(0,3.4,0,3.4)) 	# image size from webpage
+ax4.locator_params(nbins=6)	# number of ticks
+ax4.set_xlim(0,3.4) # force axes range (no whitespace!)
+ax4.set_ylim(0,3.4) # force axes range (no whitespace!)
 
-# x_axis = ax4.xaxis.get_ticklocs()
-# y_axis = ax4.yaxis.get_ticklocs()
+x_axis = ax4.xaxis.get_ticklocs()
+y_axis = ax4.yaxis.get_ticklocs()
 
-# # Move center:
-# x_center = 1.067389
-# y_center = 1.285878
-# # Put x on center
-# ax4.plot(x_center,y_center,'x',mew=2,ms=5)
-# x_axis = x_axis-x_center
-# y_axis = y_axis-y_center
-# ax4.xaxis.set_ticklabels(['%.3f' %x1 for x1 in x_axis])
-# ax4.yaxis.set_ticklabels(['%.3f' %y1 for y1 in y_axis])
+# Move center:
+x_center = 1.067389
+y_center = 1.285878
+# Put x on center
+ax4.plot(x_center,y_center,'x',mew=2,ms=5)
+x_axis = x_axis-x_center
+y_axis = y_axis-y_center
+ax4.xaxis.set_ticklabels(['%.3f' %x1 for x1 in x_axis])
+ax4.yaxis.set_ticklabels(['%.3f' %y1 for y1 in y_axis])
 
-# # Put center in title, ra: 09h 45m 38.8s, dec:-31deg 11sec 28arcsec
-# ax4.set_xlabel("Degrees")
-# ax4.set_ylabel("Degrees")
-# ax4.set_title("RA: 09h 45m 38.8s, DEC:-31$^o$ 11' 28arcsec''",fontsize=13)
+# Put center in title, ra: 09h 45m 38.8s, dec:-31deg 11sec 28arcsec
+ax4.set_xlabel("Degrees")
+ax4.set_ylabel("Degrees")
+ax4.set_title("RA: 09h 45m 38.8s, DEC:-31$^o$ 11' 28arcsec''",fontsize=13)
 
 # Some ideas to put coordinates on ALL tick marks
 # astropy SkyCoord: http://www.astropy.org/astropy-tutorials/Coordinates.html
