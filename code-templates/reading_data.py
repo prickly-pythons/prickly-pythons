@@ -3,12 +3,12 @@ print('-- Read data files in different formats')
 print('-- ')
 
 # Modules
-from astropy.io import fits
 import matplotlib.pyplot as plt
-import matplotlib.cm as cm
 import numpy as np
-import pdb as pdb
 import pandas as pd
+from astropy.io import fits
+import matplotlib.cm as cm
+import pdb as pdb
 
 # Close all windows
 plt.close('all') 
@@ -16,7 +16,6 @@ plt.close('all')
 print('ascii files!')
 # (spectrum.dat is a spectrum from starburst99, 0.7 x solar metallicity, 1e4 solar masses population, Kroupa IMF, starburst 10e6 years ago)
 
-pdb.set_trace()
 
 print('Read data into numpy array!')
 spectrum1    =   np.loadtxt('test_data/spectrum2.dat',skiprows=6)
@@ -25,6 +24,10 @@ print(type(spectrum1))
 print('Read data into pandas dataframe!')
 spectrum2    =   pd.read_table('test_data/spectrum2.dat',names=['time','wavelength','L_tot','L_stellar','L_nebular'],skiprows=6,sep=r"\s*",engine='python')    
 print(type(spectrum2))
+
+spectrum3    =   np.genfromtxt('test_data/spectrum2.dat',skip_header=6,dtype=None,names=['time','wavelength','L_tot','L_stellar','L_nebular'])
+print(type(spectrum3))
+
 
 # Saving a dataframe to use it later:
 spectrum2.to_pickle('test_data/spectrum.dataframe')
@@ -43,8 +46,11 @@ ax2.set_title('1e4 M$_{\odot}$ of stars with Z=0.008 after 10e6 yr')#+str(t1)+' 
 plt.plot(spectrum2['wavelength'],spectrum2['L_tot'],'b')
 plt.show(block=False)
 
+# And we save in postscript!!
+fig.savefig('plots/spectrum.eps',dpi=300)
+
 print('Fits files!')
-# (simulated HCO+ data cube of cloud, calculated with RT code LIME)
+# (cloud.fits is a simulated HCO+ data cube of a cloud, calculated with RT code LIME)
 
 # Read fits file into HDU (Header Data Unit) list-like Python opject
 data 		=	fits.open('test_data/cloud.fits')
