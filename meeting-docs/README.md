@@ -1,1 +1,1 @@
-This sub-repository contains documents and codes for meetings.
+This sub-repository contains agenda and re-caps of meetings.
