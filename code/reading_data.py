@@ -28,7 +28,7 @@ print(type(spectrum2))
 spectrum3    =   np.genfromtxt('test_data/spectrum2.dat',skip_header=6,dtype=None,names=['time','wavelength','L_tot','L_stellar','L_nebular'])
 print(type(spectrum3))
 
-
+pdb.set_trace()
 # Saving a dataframe to use it later:
 spectrum2.to_pickle('test_data/spectrum.dataframe')
 spectrum2    =   pd.read_pickle('test_data/spectrum.dataframe')    
