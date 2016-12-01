@@ -1,0 +1,148 @@
+	/* group selector - sets margins and padding to 0 for common elements. Makes adding margins and padding easier */
+					
+			*			{
+						margin: 0px;
+						padding: 0px;
+						}
+
+		body			{
+                         font-family:           verdana;
+						 color:                 #333;
+						 margin-top:            5px;
+						 font-size:				90%;
+						 
+						 }
+						 
+		header          {
+						font-family:             	"trebuchet ms";
+						color:						#fd7103;
+						background-image:       	url(images/fruit_pic.jpg);
+						padding-bottom:   		    50px;
+						background-position:		right top;
+						background-repeat:			no-repeat;
+						border-bottom:				solid #333 5px;
+						
+						}				 
+
+		h1				{
+						padding-bottom:			8px;
+						font-size:				275%;
+						color:					darkred;
+						
+						}	
+
+		header h2		{
+						font-size:				175%;
+						
+						}					
+		
+  		nav				{						
+						width:					160px;
+						float:					right;
+						}				
+		
+		nav ul			{
+						list-style-type:		none;
+						
+						}
+		
+		nav li
+						{
+						border-bottom:			2px solid #ccc;
+						padding:				8px 0px 12px 0px;
+						
+						}
+
+		nav a 
+						{
+						text-decoration: 		none;
+						color:					#fd7103;
+						font-weight:			bold;						
+						display:				block;
+						background-image:		url(images/grapes-sprite.png);
+						background-repeat:		no-repeat;
+						background-position:	90px 0px;
+						
+						}
+		
+		#wrapper		{
+						width: 1000px;
+						margin-left: auto;
+						margin-right: auto;
+						position:				relative;
+						
+						}
+								
+		
+		nav a:hover		
+					{
+					color:						purple;
+					background-position:		90px -30px;
+					
+					}
+					
+		main 		
+					{
+					margin-right:     175px;
+					}			
+		
+		main h2		
+					{
+					padding:  			12px 0px 5px 5px;
+					
+					}	
+					
+		main p 
+					{
+					margin-left:		10px;
+					margin-bottom:		18px;
+					padding-bottom:		3px;
+					line-height:		130%;
+					
+					}		
+					
+		footer		{
+					clear:                 both;
+					background-color:	   #333;
+					color:				   #fff;
+					text-align:			   center;
+					padding:               7px 0px 7px 0px;
+					}			
+					
+		
+		/* classes */						
+		.clearfloat 	{							   /* when an image (or any element) is floated left or right AND the image is inside a container element like */
+						font-size: 1px;			       /* main, nav, header or footer */
+						line-height: 0px;
+						clear: both;
+						height: 0px;
+						}	
+		
+		.bottom-border
+						{
+						border-bottom:	 2px solid #666;
+						
+						}	
+						
+						
+		#current
+					{
+					color:   purple;
+					background-position:		90px -30px;
+					}
+					
+				
+		
+		/* Absolute positioned elements*/
+
+		#ap_grapes	{
+					position:			absolute;	
+					top:				-15px;
+					left:				420px;
+								
+					}	
+					
+					
+					
+					
+					

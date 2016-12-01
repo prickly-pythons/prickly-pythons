@@ -9,4 +9,6 @@ def function1():
     
 	print('The sum of these two numbers is: '+str(number1+number2))
 
+	# print('The difference between these two numbers is: '+str(number1-number2))
+
 	return(number1+number2)

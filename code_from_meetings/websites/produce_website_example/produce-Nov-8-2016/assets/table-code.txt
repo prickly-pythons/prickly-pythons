@@ -1,0 +1,33 @@
+<table>	<!-- Start Price List Table-->
+		
+	<tr>
+			<th>Product #</th>
+			<th>Product Description </th>
+			<th>Price </th>
+	</tr>
+		
+	<tr>
+		<td> A 1234 </td>
+		<td> 24 Valencia Oranges </td>
+		<td> $14.99 </td>
+	</tr>
+
+	<tr>
+		<td>S 1234</td>
+		<td>18 Red Delicious Apples</td>
+		<td>$9.99</td>
+	</tr>
+
+	<tr>
+		<td>B 9856</td>
+		<td>24 Bosc Pears</td>
+		<td>$12.99</td>
+	</tr>
+
+	<tr>
+		<td>B 9856</td>
+		<td>24 Bosc Pears</td>
+		<td>$12.99</td>
+	</tr>
+	 
+ </table> <!-- End Price List Table-->
