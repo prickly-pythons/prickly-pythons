@@ -6,6 +6,7 @@ import subprocess as sub
 import numpy as np
 import pandas as pd
 import pdb as pdb
+import time as time
 
 def count():
 	print('\nUse subprocess package to count list of files in directory')
@@ -35,7 +36,9 @@ def split_gas_particles():
     gas_particles   =   pd.read_pickle('gas_particles')
 
     # Setup pool of processors to use (8 processors on my Mac Pro...)
-    pool            =   mp.Pool(processes=5)        
+    start_time = time.time()
+
+    pool            =   mp.Pool(processes=10)        
     M            	=   gas_particles['m'].values 		   # mass of gas particles
     h            	=   gas_particles['h'].values 		   # smoothing length of gas particles
     b               =   1.8                                # powerlaw slope [Blitz+07]
@@ -46,16 +49,18 @@ def split_gas_particles():
     nn              =   100                                # max draw of masses in each run
     print('\nStart up multiprocessing!')
     results         =   [pool.apply_async(GMC_generator, args=(i,M,h,Mmin,Mmax,b,frac_h,tol,nn,)) for i in range(0,len(gas_particles))]
-    print('Done!')
-
     # Extracting results to a list of length = number of gas particles:
     results         =   [p.get() for p in results]
+    print('Done!')
+    elapsed_time 	= 	time.time() - start_time
+    print('Took: ' + str(elapsed_time) + ' seconds')
+    ding 			=   sub.call(["afplay", 'Bike-Horn.mp3'])
+
     # Store output in separate lists:
     Mgmc            =   [results[i][1] for i in range(0,len(results))]
     newx            =   [results[i][2] for i in range(0,len(results))]
     newy            =   [results[i][3] for i in range(0,len(results))]
     newz            =   [results[i][4] for i in range(0,len(results))]
-
 
     print('\nEach result has a different length...')
     print('Mass of first gas particle [Msun]: ')
