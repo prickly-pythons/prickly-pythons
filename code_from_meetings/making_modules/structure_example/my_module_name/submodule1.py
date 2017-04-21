@@ -9,7 +9,7 @@ def function1():
 	number2        	=    raw_input('write another number: [default: 1] ... ')
 	if number2 == '': number2 = '1'
 
-	number1 		=	float(number1)
+	number1 		=	float(number1) 
 	number2 		=	float(number2)
 
 	print('The sum of these two numbers is: '+str(number1+number2))
@@ -17,3 +17,4 @@ def function1():
 	# print('The difference between these two numbers is: '+str(number1-number2))
 
 	return(number1+number2)
+
