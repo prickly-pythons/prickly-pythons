@@ -3,7 +3,7 @@
 ## Recap of our 6th (and last) meeting this semester!
 First of all: scones!
 
-Brent Smith presented part of his code utilizing the subproces.Call() function to run sextractor and open up ds9 among other things. 
+Brent Smith presented part of his code utilizing the subprocess.Call() function to run sextractor and open up ds9 among other things. 
 The python code can be found here as a ipython notebook presentation:<br>
 https://github.com/prickly-pythons/prickly-pythons/tree/master/code_from_meetings/subprocess <br>
 If you have sextractor installed, you can also run the code on your own.
