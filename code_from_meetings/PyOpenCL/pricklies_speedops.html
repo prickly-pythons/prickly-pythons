@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>pricklies</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+<style type="text/css">
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	position: relative;
+	margin: .5em 0;
+	-webkit-box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	-moz-box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	border-left: 10px solid #358ccb;
+	background-color: #fdfdfd;
+	background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	overflow: visible;
+	padding: 0;
+}
+
+code[class*="language"] {
+	max-height: inherit;
+	height: 100%;
+	padding: 0 1em;
+	display: block;
+	overflow: auto;
+}
+
+/* Margin bottom to accomodate shadow */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	position: relative;
+	padding: .2em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-ms-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	border-radius: 0.3em;
+	color: #c92c2c;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline;
+	white-space: normal;
+}
+
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	max-height: 13em;
+	-webkit-box-shadow: 0px 13px 8px #979797;
+	-moz-box-shadow: 0px 13px 8px #979797;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7D8B99;
+}
+
+.token.punctuation {
+	color: #5F6364;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #c92c2c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.function,
+.token.builtin,
+.token.inserted {
+	color: #2f9c0a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+	color: #1990b8;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.token.important {
+	font-weight: normal;
+}
+
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+	pre[class*="language-"]:before,
+	pre[class*="language-"]:after {
+		bottom: 14px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+	color: #e0d7d1;
+}
+
+/* Plugin styles: Line Numbers */
+pre[class*="language-"].line-numbers {
+	padding-left: 0;
+}
+
+pre[class*="language-"].line-numbers code {
+	padding-left: 3.8em;
+}
+
+pre[class*="language-"].line-numbers .line-numbers-rows {
+	left: 0;
+}
+
+/* Plugin styles: Line Highlight */
+pre[class*="language-"][data-line] {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+pre[data-line] code {
+	position: relative;
+	padding-left: 4em;
+}
+pre .line-highlight {
+	margin-top: 0;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h2 id="toc_0">Prickly Pythons: speeding up numerical code in Python</h2>
+
+<h4 id="toc_1">By Derek Mendez (damende3@asu.edu)</h4>
+
+<h1 id="toc_2">Contents</h1>
+
+<p><a href="#method1">Intro / method 1</a></p>
+
+<p><a href="#method2">Method 2: Embarrassingly Paralel</a></p>
+
+<p><a href="#profiling">Profiling</a></p>
+
+<p><a href="#numpy">Numpy approach</a></p>
+
+<p><a href="#method3">Method 3: numpy</a></p>
+
+<p><a href="#method4">Method 4: numexpr</a></p>
+
+<p><a href="#opencl">OpenCL</a></p>
+
+<p><a href="#method5">Method 5: pyopencl</a></p>
+
+<p><a href="#small">Small data speed tests</a></p>
+
+<p><a href="#large">Large data speed tests</a></p>
+
+<p><a href="#setup">Setting up OpenCL and pyopencl example</a></p>
+
+<div style="page-break-after: always;"></div>
+
+<p><strong>Note: If you manage to optimize the GPU kernel at the end of this document, please post an answer to my code-review question here: <a href="https://codereview.stackexchange.com/q/159748/78230">https://codereview.stackexchange.com/q/159748/78230</a>!</strong></p>
+
+<h2 id="toc_3">Intro / Method 1<a name="method1"></a></h2>
+
+<p>Evaluate this:</p>
+
+<p>\[ I\,(\vec{q}\,) = \big |\, \sum_j\,e^{\,i \,\,\vec{q}\cdot \vec{r}_j} \,\big |^2 = \big | \,A(\vec{q})\,\big | ^2\]
+given different (not necessarily gridded) vectors \(\vec{q}\) where</p>
+
+<ul>
+<li>\(\vec{q}\) is a 3D vector referred to as a <code>q_vec</code></li>
+<li>\(\vec{r}_j\) is a list of 3D vectors \(0 \le j &lt; N_{\text{atom}} \) referred to as <code>atom_vecs</code></li>
+<li>\(i = \sqrt{-1}\)</li>
+</ul>
+
+<p>First, generate the test data (random numbers)</p>
+
+<div><pre><code class="language-python">import numpy as np
+# pick a random set of qx,qy,qz (10,000 q vectors)
+q_vecs = np.random.random((10000, 3))
+# pick a random set of ax,ay,az (100 atom vectors)
+atom_vecs = np.random.random((100, 3))</code></pre></div>
+
+<p>Now, compute. </p>
+
+<p>Below is a naive implementation to compute \(I(\vec{q}\,)\)</p>
+
+<div><pre><code class="language-python"># how to calculate A(q) ??
+# lets try the naive way first... 
+def method1(q_vecs, atom_vecs):
+    Nq = q_vecs.shape[0]
+    ampsR = np.zeros( Nq ) 
+    ampsI = np.zeros( Nq )
+    for i_q, q in enumerate( q_vecs):
+        qx,qy,qz = q
+        for i_atom, atom in enumerate( atom_vecs):
+            ax,ay,az = atom
+            phase = qx*ax + qy*ay + qz*az
+            ampsR[i_q] += np.cos( -phase)
+            ampsI[i_q] += np.sin( -phase)
+    I = ampsR**2 + ampsI**2 
+    return I</code></pre></div>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_4">Method 2: Embarrassingly parallel<a name="method2"></a></h2>
+
+<p>One way to speed-up any Python code is to use multiple processors. Here is an embarrassingly parallelized version of method1</p>
+
+<div><pre><code class="language-python">from joblib import Parallel, delayed
+def method2(q_vecs, atom_vecs, my_method, n_jobs=4,):
+    q_vecs_split = np.array_split(q_vecs, n_jobs)
+    results = Parallel(n_jobs=n_jobs)(
+        delayed(my_method)(qs,atom_vecs) 
+        for qs in q_vecs_split)
+    return np.concatenate(results,0) 
+    </code></pre></div>
+
+<p>One would execute e.g. <code>method2(q_vecs, atom_vecs, my_method=method1, n_jobs=4)</code> for small savings. This can be really useful for RAM intensive computations that run for days. </p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/en/2/25/Speed_Racer_promotional_image.jpg" alt="alt text"></p>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_5">Profiling<a name="profiling"></a></h2>
+
+<p>We can investigate the code (profiling) to see where to speed things up.
+For this you can try <strong><a href="https://github.com/rkern/line_profiler">https://github.com/rkern/line_profiler</a></strong>. Once installed you can profile script as follows. Create a file name profileme.py</p>
+
+<div><pre><code class="language-python">import numpy as np
+q_vecs = np.random.random((10000, 3))
+atom_vecs = np.random.random((100, 3))
+ 
+@profile  # this bit is important!
+def method1(q_vecs, atom_vecs):
+    Nq = q_vecs.shape[0]
+    ampsR = np.zeros( Nq ) 
+    ampsI = np.zeros( Nq )
+    for i_q, q in enumerate( q_vecs):
+        qx,qy,qz = q
+        for i_atom, atom in enumerate( atom_vecs):
+            ax,ay,az = atom
+            phase = qx*ax + qy*ay + qz*az
+            ampsR[i_q] += np.cos( -phase)
+            ampsI[i_q] += np.sin( -phase)
+    I = ampsR**2 + ampsI**2 
+    return I
+
+method1(q_vecs, atom_vecs)</code></pre></div>
+
+<p>Now in the terminal run <code>kernpprof -l profileme.py</code>, which will generate a file called profileme.py.prof. To view it, execute <code>python -m line_profiler profileme.py.lprof</code>, which prints:</p>
+
+<div><pre><code class="language-none">Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    14                                           @profile
+    15                                           def method1(q_vecs, atom_vecs):
+    16         1            5      5.0      0.0      Nq = q_vecs.shape[0]
+    17         1           36     36.0      0.0      ampsR = np.zeros( Nq ) 
+    18         1           30     30.0      0.0      ampsI = np.zeros( Nq )
+    19     10001         6507      0.7      0.1      for i_q, q in enumerate( q_vecs):
+    20     10000        15171      1.5      0.2          qx,qy,qz = q
+    21   1010000       638603      0.6      8.7          for i_atom, atom in enumerate( atom_vecs):
+    22   1000000      1534379      1.5     20.8              ax,ay,az = atom
+    23   1000000       864692      0.9     11.7              phase = qx*ax + qy*ay + qz*az
+    24   1000000      2180374      2.2     29.6              ampsR[i_q] += np.cos( -phase)
+    25   1000000      2125909      2.1     28.9              ampsI[i_q] += np.sin( -phase)
+    26         1          205    205.0      0.0      I = ampsR**2 + ampsI**2 
+    27         1            1      1.0      0.0      return I</code></pre></div>
+
+<p>Lets see how we can speed this up..</p>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_6">Numpy approach <a name="numpy"></a></h2>
+
+<p><img src="http://www.numpy.org/_static/numpy_logo.png" alt="alt text"></p>
+
+<p>Notice how for each <code>atom_vec</code> and <code>q_vec</code> we calculate a <code>phase</code> term. If we have 10,000 atom_vectors and 100 q vectors, then we will calculate 1,000,000 phase terms. We can actually do that in a single line using a matrix product. Let \(Q\) be a Nq x 3 matrix of <code>q_vecs</code> and let \(A\) be a Natom x 3 matrix of <code>atom_vecs</code>. Then the matrix product \(Q\cdot A^T\) will give us a 10000 x 100 matrix of phase terms. Fortunately we can do this in a single line with numpy, and the algorithm will be fairly well optimized, depending on the numpy config. You should check your numpy config and ensure you see openblas, atlas, or mkl links, and if not reinstall numpy. See <a href="https://stackoverflow.com/a/14391693/2077270">https://stackoverflow.com/a/14391693/2077270</a> for an example on linking openblas to numpy. Note, anaconda numpy will typically ship with mkl links which are libraries designed by intel for speeding up computations on their chips.</p>
+
+<div><pre><code class="language-python">import numpy as np
+np.show_config()</code></pre></div>
+
+<p>My output is the following, because I installed openblas prior to setting up numpy:</p>
+
+<div><pre><code class="language-none">lapack_opt_info:
+    libraries = [&#39;openblas&#39;, &#39;openblas&#39;]
+    library_dirs = [&#39;/usr/local/opt/openblas/lib&#39;]
+    define_macros = [(&#39;HAVE_CBLAS&#39;, None)]
+    language = c
+    runtime_library_dirs = [&#39;/usr/local/opt/openblas/lib&#39;]
+blas_opt_info:
+    libraries = [&#39;openblas&#39;, &#39;openblas&#39;]
+    library_dirs = [&#39;/usr/local/opt/openblas/lib&#39;]
+    define_macros = [(&#39;HAVE_CBLAS&#39;, None)]
+    language = c
+    runtime_library_dirs = [&#39;/usr/local/opt/openblas/lib&#39;]
+openblas_info:
+    libraries = [&#39;openblas&#39;, &#39;openblas&#39;]
+    library_dirs = [&#39;/usr/local/opt/openblas/lib&#39;]
+    define_macros = [(&#39;HAVE_CBLAS&#39;, None)]
+    language = c
+    runtime_library_dirs = [&#39;/usr/local/opt/openblas/lib&#39;]
+blis_info:
+  NOT AVAILABLE
+openblas_lapack_info:
+    libraries = [&#39;openblas&#39;, &#39;openblas&#39;]
+    library_dirs = [&#39;/usr/local/opt/openblas/lib&#39;]
+    define_macros = [(&#39;HAVE_CBLAS&#39;, None)]
+    language = c
+    runtime_library_dirs = [&#39;/usr/local/opt/openblas/lib&#39;]
+lapack_mkl_info:
+  NOT AVAILABLE
+blas_mkl_info:
+  NOT AVAILABLE
+</code></pre></div>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_7">Method 3: numpy<a name="method3"></a></h2>
+
+<p>Here is a method that makes full use of numpy, but note this methods consumes extra memory (needed to store the phase terms as opposed to computing them on the fly):</p>
+
+<div><pre><code class="language-python">def method3(q_vecs, atom_vecs):
+    phases = np.dot( q_vecs, atom_vecs.T) # T is the transpose, hence (Nq x 3) dotted with (3 x Natom)
+    # This results in an (Nq x Natom) array
+    
+    #In the end we want Nq amplitudes (both real and imaginary)
+    cosph = np.cos( -phases) 
+    sinph = np.sin( -phases)
+    ampsR = np.sum( cosph, axis=1) # summing over the atoms axis... 
+    ampsI = np.sum( sinph, axis=1)
+
+    #take the mod-squared and return 
+    I = ampsR**2 + ampsI**2 
+    return I</code></pre></div>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_8">Method 4: numexpr<a name="method4"></a></h2>
+
+<p>Can we make it faster? Lets try with <code>numexpr</code>, which makes use of multi-threading to speed-up element-wise numpy operations. Also, see this link for some discussions on numpy backend speedups VS numexpr: <strong><a href="https://stackoverflow.com/a/24498248/2077270">https://stackoverflow.com/a/24498248/2077270</a></strong></p>
+
+<div><pre><code class="language-python">import numexpr as ne
+def method4(q_vecs, atom_vecs):
+    phases = np.dot( q_vecs, atom_vecs.T) # T is the transpose, hence (Nq x 3) dotted with (3 x Natom)
+    # This results in an (Nq x Natom) array
+    
+#   In the end we want Nq amplitudes (both real and imaginary)
+    cosph = ne.evaluate(&#39;cos( -phases)&#39;)
+    sinph = ne.evaluate(&#39;sin( -phases)&#39;)
+    ampsR = np.sum( cosph, axis=1) # summing over the atoms axis... 
+    ampsI = np.sum( sinph, axis=1)
+
+#   take the mod-squared and return 
+    #I = ne.evaluate(&#39;ampsR**2 + ampsI**2&#39;)
+    I = ampsR**2 + ampsI**2 
+    return I</code></pre></div>
+
+<p>We might be able to squeeze out some extra speedups, but its getting increasingly harder.
+<div style="page-break-after: always;"></div></p>
+
+<h2 id="toc_9">OpenCL<a name="opencl"></a></h2>
+
+<p><img src="http://www.nallatech.com/wp-content/uploads/Logo-OpenCL-220.jpg" alt="alt text"></p>
+
+<p>Profiling <code>method4</code> reveals that the element-wise trig. operations are the slowest part of the code. This is where we can use the GPU to speed things up. There is an important thing to remember with GPU coding - <em>computations are fast, memory management is slow</em>. So therefore when coding on a GPU, seek to <strong>maximize the computations</strong> per processing unit, and <strong>minimize the memory transfer</strong> to and from the GPU device.  Coding on a CPU and a GPU simultaneously requires a little more care. One should <strong>always</strong> be thinking about the following two questions</p>
+
+<ol>
+<li>what are my data types (e.g. <code>np.float32</code>)</li>
+<li>are my arrays contiguous in memory</li>
+</ol>
+
+<p>There are many ways to utilize a GPU in Python, and here we will talk about the wrapper to <strong>OpenCL</strong>, otherwise known as pyopencl (see <a href="https://wiki.tiker.net/PyOpenCL">https://wiki.tiker.net/PyOpenCL</a> and the installation instructions therein). On a macintosh, pyopencl can easily be installed with <code>pip install pyopencl</code>, however this is because openCL ships with mac OS. In Linux and (I think) windows you will need to install openCL by installing either CUDA,SDK depending on whether you have an Intel,AMD GPU, respectively. You will then need to locate the openCL headers/libs to install pyopencl. See the end of this doc for a brief example on setting things up in Ubuntu (for AMD chip).</p>
+
+<p>OpenCL jargon includes</p>
+
+<ul>
+<li><strong>context</strong>, which is a list of devices that are used together, in our case, it will be a single GPU</li>
+<li><strong>queue</strong> is a program queue specifying the order of operations between different devices.. In our case, I think it does not matter much since we will use only one GPU</li>
+</ul>
+
+<p>This is how you can create context and queue using pyopencl</p>
+
+<div><pre><code class="language-python">import pyopencl as cl
+def get_context_queue():
+#   list the platforms
+    platforms = cl.get_platforms()
+    print(&quot;Found platforms (will use first listed):&quot;, platforms)
+#   select the gpu
+    my_gpu = platforms[0].get_devices(
+        device_type=cl.device_type.GPU)
+    assert( my_gpu)
+    print(&quot;Found GPU(s):&quot;, my_gpu)
+#   create the context for the gpu, and the corresponding queue
+    context = cl.Context(devices=my_gpu)
+    queue = cl.CommandQueue(context)
+    return context, queue</code></pre></div>
+
+<p>Executing (in a python term) <code>context,queue = get_context_queue()</code> on my Mac laptop yielded</p>
+
+<div><pre><code class="language-none">(&#39;Found platforms (will use first listed):&#39;, [&lt;pyopencl.Platform &#39;Apple&#39; at 0x7fff0000&gt;])
+(&#39;Found GPU(s):&#39;, [&lt;pyopencl.Device &#39;Iris Pro&#39; on &#39;Apple&#39; at 0x1024500&gt;])</code></pre></div>
+
+<p>Once you have a context and a queue, you are ready to write an openCL kernel, which is basically the instructions that will be provided to each GPU worker unit. Each worker should do the same roughly the same things, so try avoiding e.g. conditional statements that lead to workers executing different instructions (I could be wrong on this). Below I will write the new method which uses pyopencl, however I want to discuss the flow of things. Our test data <code>q_vecs</code> and <code>atom_vecs</code> are <code>np.ndarray</code> objects that live on the CPU. We want to transfer those data to the GPU, which we do in pyopencl using <code>pyopencl.array</code>. Host buffer refers to the numpy arrays and device buffer refers to the GPU arrays. This is why its important to be type specific, as well as to work with contiguous memory objects.</p>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_10">Method 5: pyopencl<a name="method5"></a></h2>
+
+<p>Here is an openCL example</p>
+
+<div><pre><code class="language-python">import pyopencl as cl
+import pyopencl.array as clarray
+def method5( q_vecs, atom_vecs, context, queue):
+    Nato = atom_vecs.shape[0]
+    Nq = q_vecs.shape[0]
+    # these are the output host buffers which will also be transferred to the device, updated on the device and then copied back to the host.
+    ampsR = np.ascontiguousarray(np.zeros( Nq, dtype=np.float32) )
+    ampsI = np.ascontiguousarray(np.zeros( Nq, dtype=np.float32) )
+    # OpenCL C source code , this is the instructions to the GPU workers
+    # note this code is essentially the inner-most loop of method 1, such that
+    # each worker is doing a single iteration of the outer-loop of method 1.
+    # this allows for insane speedups, without the need to use excess memory
+    # as in the numpy case (although GPUs have limited memory)
+    kernel = &quot;&quot;&quot; 
+    __kernel void sim_amps(__global float* q_vecs,
+                            __global float* atom_vecs,
+                             __global float* ampsR,
+                             __global float* ampsI,
+                             int Nq, int Natoms){
+    //  this is the unique ID of each worker, and each worker will be loading a single q vec
+        int g_i = get_global_id(0);
+        float qx,qy,qz,ax,ay,az, cph, sph, phase;
+    //  we pass 1D arrays to openCL, in row-major order
+        qx = q_vecs[g_i*3];
+        qy = q_vecs[g_i*3+1];
+        qz = q_vecs[g_i*3+2];
+        for(int i =0; i &lt; Natoms; i++){
+            ax = atom_vecs[i*3];
+            ay = atom_vecs[i*3+1];
+            az = atom_vecs[i*3+2];
+            phase = ax*qx + ay*qy + az*qz;
+            cph = native_cos(phase); // native openCL trig functions
+            sph = native_sin(phase);
+            ampsR[g_i] += cph;
+            ampsI[g_i] += sph;
+            
+        }
+    }
+    &quot;&quot;&quot;
+    #   setup opencl, compile bugs will show up here
+    program = cl.Program(context, kernel).build()
+
+#   move host arrays to GPU device, note forcing q_vecs and atom_vecs to be contiguous , ampsR and ampsI are already contiguous
+    qs_dev = clarray.to_device(queue, np.ascontiguousarray(q_vecs.astype(np.float32)))
+    atoms_dev = clarray.to_device(queue, np.ascontiguousarray(atom_vecs.astype(np.float32)))
+    ampsR_dev = clarray.to_device(queue, ampsR)
+    ampsI_dev = clarray.to_device(queue, ampsI)
+
+#   specify scalar args (just tell openCL which kernel args are scalar)
+    program.sim_amps.set_scalar_arg_dtypes(
+            [None, None, None,None,np.int32, np.int32])
+#   run the kernel
+#   note there are 3 pre-arguments to our kernel, these are the queue, 
+#   the total number of workers, and the desired worker-group size. 
+#   Leaving worker-group size as None lets openCL decide a value (I think)
+    program.sim_amps(queue, (Nq,), None, qs_dev.data, atoms_dev.data, 
+        ampsR_dev.data, ampsI_dev.data, np.int32(Nq), np.int32(Nato))
+
+#   transfer data from device back to host
+#    you can try to optimize enqueue_copy by passing different flags 
+    cl.enqueue_copy(queue, ampsR, ampsR_dev.data)
+    cl.enqueue_copy(queue, ampsI, ampsI_dev.data)
+    
+    I = ampsR**2 + ampsI**2
+    return I
+</code></pre></div>
+
+<p>Running the above method shows little to no improvement to <code>method4</code>, but that is beacuse <code>q_vecs</code> and <code>atom_vecs</code> are relatively small. If we make them much larger , e.g. 1e6 <code>q_vecs</code> and 1e4 <code>atom_vecs</code>, then we will notice that the GPU version kicks some serious butt.</p>
+
+<p><strong>If you manage to optimize the above kernel, please post an answer to my code-review question here: <a href="https://codereview.stackexchange.com/q/159748/78230">https://codereview.stackexchange.com/q/159748/78230</a>.</strong></p>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_11">Small data speed tests<a name="small"></a></h2>
+
+<p>Below are timing results of the different methods for a <strong>small</strong> data set of 10,000 q-vectors and 100 atom vectors:</p>
+
+<p>On the <strong>MacBook pro 16GB RAM / El Capitan / intel i7 / Iris Pro:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th>timing result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>method 1</td>
+<td>5.41 s</td>
+</tr>
+<tr>
+<td>method 2 (method 1 / n_jobs=4)</td>
+<td>1.37 s</td>
+</tr>
+<tr>
+<td>method 3</td>
+<td>30.9 ms</td>
+</tr>
+<tr>
+<td>method 4</td>
+<td>10.6 ms</td>
+</tr>
+<tr>
+<td>method 5</td>
+<td>9.38 ms</td>
+</tr>
+</tbody>
+</table>
+
+<p>And for the <strong>DELL Server 64GB RAM / Scientific Linux / 16 core / Tesla K40m:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th>timing result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>method 1</td>
+<td>3.04 s</td>
+</tr>
+<tr>
+<td>method 2 (method 1 / n_jobs=8)</td>
+<td>569 ms</td>
+</tr>
+<tr>
+<td>method 3</td>
+<td>47.6 ms</td>
+</tr>
+<tr>
+<td>method 4</td>
+<td>20 ms</td>
+</tr>
+<tr>
+<td>method 5</td>
+<td>7.44 ms</td>
+</tr>
+</tbody>
+</table>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_12">Large data speed tests<a name="large"></a></h2>
+
+<p>Below are timing results of the different methods for a <strong>large</strong> data set of 1,000,000 q-vectors and 1,000 atom vectors:</p>
+
+<p>On the <strong>DELL Server 64GB RAM / Scientific Linux / 16 core / Tesla K40m:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th>timing result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>method 1</td>
+<td>too impatient to test</td>
+</tr>
+<tr>
+<td>method 2 (method 1 / n_jobs=8)</td>
+<td>8 min 23 s</td>
+</tr>
+<tr>
+<td>method 3</td>
+<td>29.1 s</td>
+</tr>
+<tr>
+<td>method 4</td>
+<td>6.91 s</td>
+</tr>
+<tr>
+<td>method 5</td>
+<td>650 ms</td>
+</tr>
+</tbody>
+</table>
+
+<p>As the data gets bigger the GPU wins by far, and eventually, if the data gets sufficiently large, then methods3/4 will require too much memory to complete.</p>
+
+<div style="page-break-after: always;"></div>
+
+<h2 id="toc_13">Setting up OpenCL for an AMD chip in Ubuntu server <a name="setup"></a></h2>
+
+<p>On my linux machine I first installed SDK (I was using an AMD Radeon HD 5770 chip on an old Mac Pro tower from 2010 running Ubuntu 14 server).  To do so, I installed the proprietary GPU drivers. For the Radeon I followed the instructions <a href="https://help.ubuntu.com/community/BinaryDriverHowto/AMD#Installation_via_the_Ubuntu_repositories">https://help.ubuntu.com/community/BinaryDriverHowto/AMD#Installation<em>via</em>the<em>Ubuntu</em>repositories</a> (section 4). Don&#39;t worry if <code>fglrx</code> doesn&#39;t work - especially if you are in server mode.</p>
+
+<p>Installing the SDK is straight forward, just download the installer and run e.g.</p>
+
+<div><pre><code class="language-none">chmod ugo+x AMD-APP-SDK-v3.0.130.136-GA-linux64.sh
+sudo ./AMD-APP-SDK-v3.0.130.136-GA-linux64.sh</code></pre></div>
+
+<p>For me, this installed the sdk into</p>
+
+<div><pre><code class="language-none">/opt/AMDAPPSDK-3/lib/x86_64/sdk</code></pre></div>
+
+<p>Now, we want to check that openCL installed correctly and that it located the GPU. Do this by executing the clinfo script</p>
+
+<div><pre><code class="language-none">/opt/AMDAPPSDK-3.0/bin/x86_64/clinfo | less    # piping to less because the output is long</code></pre></div>
+
+<p>Now you should see your GPU listed as a hardware device, as well as the CPU.</p>
+
+<p><em>Note</em>, If you already installed CUDA or SDK, then you can try search for the binary <code>clinfo</code> in order to help locate the libs, as the libs will generally live nearby. Try e.g. <code>find /usr -name clinfo</code> or <code>find /opt -name clinfo</code>, stuff like that. You might also try <code>sudo dpkg -L libOpenCL</code>.</p>
+
+<p>Next, prior to installing pyopencl. I installed the following using pip (some might not be needed) </p>
+
+<div><pre><code class="language-none">pip install mako
+pip install pytools
+pip install pytest
+pip install decorator
+pip install cffi
+pip install appdirs
+pip install six</code></pre></div>
+
+<p>From there I was ready to install pyopencl (see <a href="https://wiki.tiker.net/PyOpenCL/Installation/Linux">https://wiki.tiker.net/PyOpenCL/Installation/Linux</a> for additional details). I grabbed a recent python-opencl installer (pyopencl-2016.2.1.tar.gz) After unpacking and navigating to the install folder do</p>
+
+<div><pre><code class="language-none">python configure.py --cl-inc-dir=/opt/AMDAPPSDK-3.0/include --cl-lib-dir=/opt/AMDAPPSDK-3.0/lib/x86_64/sdk --cl-libname=OpenCL
+su -c &quot;make install&quot;</code></pre></div>
+
+<p>the <code>--cl-inc-dir</code> should contain a folder called <code>CL/</code> which itself will contain the header files <code>cl.h</code> and <code>opencl.h</code>, amongst others. The <code>--cl-lib-dir</code> should contain the library, e.g. <code>libOpenCL.so</code>, and hence the libname in this case would be OpenCL.</p>
+
+<p>If it worked you should be able to run</p>
+
+<div><pre><code class="language-none">python -c &quot;import pyopencl&quot;</code></pre></div>
+
+<p>without any error messages. Now that you are done, you can begin using pyopencl.</p>
+
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+<script type="text/javascript">
+Prism.languages.python={"triple-quoted-string":{pattern:/"""[\s\S]+?"""|'''[\s\S]+?'''/,alias:"string"},comment:{pattern:/(^|[^\\])#.*/,lookbehind:!0},string:/("|')(?:\\?.)*?\1/,"function":{pattern:/((?:^|\s)def[ \t]+)[a-zA-Z_][a-zA-Z0-9_]*(?=\()/g,lookbehind:!0},"class-name":{pattern:/(\bclass\s+)[a-z0-9_]+/i,lookbehind:!0},keyword:/\b(?:as|assert|async|await|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|pass|print|raise|return|try|while|with|yield)\b/,"boolean":/\b(?:True|False)\b/,number:/\b-?(?:0[bo])?(?:(?:\d|0x[\da-f])[\da-f]*\.?\d*|\.\d+)(?:e[+-]?\d+)?j?\b/i,operator:/[-+%=]=?|!=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]|\b(?:or|and|not)\b/,punctuation:/[{}[\];(),.:]/};
+</script>
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>
