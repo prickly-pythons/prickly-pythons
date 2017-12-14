@@ -1,4 +1,4 @@
-# Monday, Nov 28 2017
+# Tuesday, Nov 28 2017
 
 ## Recap of our 7th meeting this semester!
 0. Almond cookies from Joe('s mom) gluten-free chocolate and ginger cookies from [Tempe Farmers Market](http://www.tempefarmersmarket.com/). And coffee!
