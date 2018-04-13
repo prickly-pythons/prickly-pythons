@@ -9,7 +9,7 @@ These little chips come in all sorts of shapes and sizes, some are really powerf
 2. High-level, interpreted languages like Python *will not* run on a microcontroller (barely enough memeroy for the program let alone the interpreter).
 3. The chips interact with the outside world via pins (metal legs sticking out of the chip). You configure them to be either inputs or outputs by assigning 0's and 1's, respectively, to particular memory slots called data direction registers (DDR). 
 4. If a pin is an output you turn it on (make it output current) by assigning a 1 and off by assigning a 0 to another memory register that deals with I/O.
-5. Datasheets and the instrument manuals are your friend.
+5. Datasheets and instrument manuals are your friend.
 6. It's very easy to get a serial interface going in Python. Steps are:
 
 
