@@ -45,7 +45,7 @@ while True:
 
 ```
 
-And that's it! You can then store the value read (in a list for example) and do any analysis you wish on it. These are the essentials for getting serial inputs to the computer. The rest of the code in [this more elaborate version](https://github.com/prickly-pythons/prickly-pythons/blob/master/code_from_meetings/real_world/realtime_serial_plotting.py) deals with plotting, timing and handling exceptions.
+And that's basically it! You can then store the values read, in a Python list for example, and do any analysis you wish on them. These are the essentials for getting serial inputs to Python. The rest of the code in [this more elaborate version](https://github.com/prickly-pythons/prickly-pythons/blob/master/code_from_meetings/real_world/realtime_serial_plotting.py) deals with plotting, timing and handling exceptions.
 
 ### Some interesting and potentially useful links:
 
