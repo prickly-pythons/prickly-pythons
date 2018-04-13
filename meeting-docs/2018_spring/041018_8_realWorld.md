@@ -67,4 +67,5 @@ http://hacks.ayars.org/
 
 
 <br>
+
 Please visit our [homepage](http://prickly-pythons.github.io) where you can find topics for future meetings and links to the codes presented.
