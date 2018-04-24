@@ -1,5 +1,11 @@
 # Birthday Reminder
 
+Creates a notification box in the top right corner of the screen with the following options if someone has a birthday today (or one that is coming up within the next 3 weeks):
+- close (ignore)
+- Taken care of
+- Need to get gift
+- No worries
+
 ## Responsible
 Karen Olsen, last edits: April 24 2018
 
