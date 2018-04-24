@@ -1,0 +1,2 @@
+#!/bin/sh
+/Users/Karen/anaconda2/bin/python2 /Users/Karen/code/birthdays/birthday_reminder.py
