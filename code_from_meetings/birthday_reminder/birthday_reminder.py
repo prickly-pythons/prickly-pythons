@@ -72,7 +72,7 @@ def create_notify_script(title, subtitle, message):
     # Installed Alerter program from https://github.com/vjeantet/alerter
 
     script_out          =    open(root+'notify_script.sh','w')
-    script_out.write('ANSWER="$('+root+'alerter -title "%s" -subtitle "%s" -message "%s" -actions "Taken care off","Need to get gift","No worries")"' % (title,subtitle,message) )
+    script_out.write('ANSWER="$('+root+'alerter -title "%s" -subtitle "%s" -message "%s" -actions "Taken care of","Need to get gift","No worries")"' % (title,subtitle,message) )
     script_out.write('\ncase $ANSWER in')
     script_out.write('\n    "@CLOSED") echo "You clicked on the default alert close button" ;;')
     script_out.write('\n    "@CONTENTCLICKED") echo "You clicked the alert content !" ;;')
