@@ -4,8 +4,8 @@
 0. Frozen coconut buns.
 1. ASCII and character encodings.
 2. Converting between binary (base-2), decimal (base-10) and hexadecimal (base-16) numbers
-2. Reading data by writing custom code. Hard and tedius but definitely the route to learning how to program.
-3. Quickly went through loading with numpy's `genfromtext()`.
+2. Reading data by writing custom code. Tedius and difficult but definitely the route to learning how to program.
+3. Quickly went through loading with numpy's `genfromtext()` function. Will try and go through this again more carefully next time.
 4. Finished early to accommodate gamma-ray burst seminar.
 
 # More info:
