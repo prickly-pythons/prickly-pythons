@@ -2,8 +2,8 @@
 
 ## Recap of meeting 3 this semester!
 0. Frozen coconut buns.
-1. Python slicing syntax `x[start:end:inc]` is exactly like FOR loops C.
-2. Matrix class can do matrix multiplication more intuitively, but otherwise use `np.dot(A,B)` for multiplying matrices A and B, i.e., AB, and `np.dot(B,A)` for BA.
+1. Python slicing syntax `x[start:end:inc]` is exactly like FOR loops in C.
+2. The matrix class can do matrix multiplication more intuitively, but otherwise use `np.dot(A,B)` for multiplying matrices A and B, i.e., AB, and `np.dot(B,A)` for BA.
 3. Watch out for the default interpolation setting in `plt.imshow()`
 
 # More info:
