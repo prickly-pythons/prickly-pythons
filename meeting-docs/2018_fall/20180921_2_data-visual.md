@@ -4,7 +4,7 @@
 0. Frozen coconut buns.
 1. Python slicing syntax `x[start:end:inc]` is exactly like FOR loops in C.
 2. The matrix class can do matrix multiplication more intuitively, but otherwise use `np.dot(A,B)` for multiplying matrices A and B, i.e., AB, and `np.dot(B,A)` for BA.
-3. Watch out for the default interpolation setting in `plt.imshow()`
+3. Watch out for the default interpolation setting in `plt.imshow()`.
 
 # More info:
 The Jupyter notebook presented is [here](https://github.com/prickly-pythons/prickly-pythons/blob/master/code_from_meetings/visualizing_data/Data%20Visualization%202%20-%20Slice%20and%20view.ipynb).
