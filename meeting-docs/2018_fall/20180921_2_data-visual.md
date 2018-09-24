@@ -1,4 +1,4 @@
-# Friday, Sep 22 2018
+# Friday, Sep 21 2018
 
 ## Recap of meeting 3 this semester!
 0. Frozen coconut buns.
