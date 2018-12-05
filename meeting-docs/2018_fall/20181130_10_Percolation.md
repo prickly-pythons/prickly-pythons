@@ -2,7 +2,7 @@
 
 ## Recap of meeting 10 this semester!
 - One definition of percolation is the connectivity in random systems.
-- It is one of the simplest considerations on a system that shows cricitical behaviours.
+- It is one of the simplest considerations on a system that shows critical behaviours.
 - We can model percolation in 2D by randomly placing 1's and 0's in an array and seeing for example if pouring 2-dimensional coffee into one side of this system will result in the coffee flowing out of the opposite side (here, 1 means obstruction, 0 means coffee is free to flow).
 - These 1's pixels connect to form clusters, which could be thought of as individual coffee grains of different sizes and shapes in a percolator in the above analogy.
 - The clusters can be labelled with Scipy's label routine in `scipy.ndimage.measurements`
