@@ -1,10 +1,10 @@
 # Welcome to the Prickly Pythons
-This is a group for Python users, mainly at Arizona State Universsity in Tempe, Arizona. The group started as an idea from the School of Earth and Space Exploration (SESE) postdoctoral reserachers and graduate students to have a platform to discuss and share codes and ideas about Python and scientific programming in general to help each other learn more and develop a scientific programming community. Anyone with any level of programming exerience are welcome to join the group. Every member is encouraged to utilize this platform to help move the programming community forward!
+This is a group for Python users, mainly at Arizona State Universsity in Tempe, Arizona. The group started as an idea for the School of Earth and Space Exploration (SESE) postdoctoral reserachers and graduate students to have a platform to discuss and share codes and ideas about Python and scientific programming in general. A major aim of the group is to help each other learn more and to develop a scientific programming community. Anyone with any level of programming exerience are welcome to join the group. Every member is encouraged to utilize this platform to help move the programming community forward!
 
 ## About This Repository
-This repository is part of our platform and is the main repository for the Prickly Pythons. Members are encourage to share code templates, examples and tutorials by pushing to the repository. We also encourage members to ask questions, make requests and give suggestions to the group by using GitHub issue tracking functionality.
+This repository is part of our platform and is the main repository for the Prickly Pythons. Members are encourage to share code templates, examples and tutorials by pushing to the repository. We also encourage members to ask questions, make requests and give suggestions to the group by using the GitHub issue tracking functionality.
 
-In addition, we will pick some topics from the repo and discuss them at our weekly lunch meeting (Time TBD). 
+In addition, we will pick some topics from the repo and discuss them at our weekly meeting (Time TBD). 
 
 ## Past Meetings
 Are posted on our landing page: [http://prickly-pythons.github.io/](http://prickly-pythons.github.io/)
@@ -30,7 +30,7 @@ The `prickly-pythons` directory is your "local" copy of the group repository. Yo
     git push
     ````
 
-Note that might have to `pull` first before you can `push`.
+Note that you might have to `pull` first before you can `push`.
 
 ### Asking Questions via Issue Tracking
 To be updated ...
