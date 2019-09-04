@@ -1,16 +1,13 @@
 # Welcome to the Prickly Pythons
-This is a group for python users, mainly at SESE (School of Earth and Space Exploration) in Tempe, Arizona. The group started as an idea from SESE postdoctoral reserachers and graduate students to have a platform to disscuss and share codes and idears about Python and scientific programing in general to help each other learn more and develop a scientific programing community within SESE. SESE and related personals with any levle of programing exerience are welcome to join the group. Every member is encourage to utilize this platform to help moving the SESE programing community forward!
-
-## Next Meeting
-Will be posted on our landing page: [http://prickly-pythons.github.io/](http://prickly-pythons.github.io/)
+This is a group for Python users, mainly at Arizona State Universsity in Tempe, Arizona. The group started as an idea for the School of Earth and Space Exploration (SESE) postdoctoral reserachers and graduate students to have a platform to discuss and share codes and ideas about Python and scientific programming in general. A major aim of the group is to help each other learn more and to develop a scientific programming community. Anyone with any level of programming exerience are welcome to join the group. Every member is encouraged to utilize this platform to help move the programming community forward!
 
 ## About This Repository
-This repository is part of our platform and is the main repository for the Prickly Pythons. Members are encourage to share code templates, examples and tutorials by pushing to the repository. We also encourage members to ask questions, make requests and give suggestions to the group by using GitHub issue tracking functionality.
+This repository is part of our platform and is the main repository for the Prickly Pythons. Members are encourage to share code templates, examples and tutorials by pushing to the repository. We also encourage members to ask questions, make requests and give suggestions to the group by using the GitHub issue tracking functionality.
 
-In addition, we will pick some topics from the repo and discuss them at our weekly lunch meeting (Time TBD). 
+In addition, we will pick some topics from the repo and discuss them at our weekly meeting (Time TBD). 
 
-## Gitter Chat Room
-In addition, we have a chatroom on [Gitter](https://gitter.im/sese-python-users?utm_source=share-link&utm_medium=link&utm_campaign=share-link) for members to chat and ask questions in realtime. The Gitter chatroom is linked to this repository. It uses your GitHub account as a log-in, no information will be sent to Gitter, and it allow [GitHub Flavor Makrdown](https://help.github.com/articles/github-flavored-markdown/) for codes parsing and the use of `@mention`. There is [a Gitter app](https://gitter.im/apps) available on most operating systems.
+## Past Meetings
+Are posted on our landing page: [http://prickly-pythons.github.io/](http://prickly-pythons.github.io/)
 
 ## Using the Repository
 ### Sharing Your Stuff 
@@ -33,7 +30,7 @@ The `prickly-pythons` directory is your "local" copy of the group repository. Yo
     git push
     ````
 
-Note that might have to `pull` first before you can `push`.
+Note that you might have to `pull` first before you can `push`.
 
 ### Asking Questions via Issue Tracking
 To be updated ...
