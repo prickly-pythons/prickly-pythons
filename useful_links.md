@@ -36,8 +36,12 @@ Mike Zingale's tutorial on hydrodynamics
 <br>
 https://github.com/python-hydro/how_to_write_a_hydro_code
 
+Starlink satellite orbits
+<br>
+https://nbviewer.jupyter.org/github/bwinkel/notebooks/blob/master/satellite_constellations.ipynb
 
-## Books
+
+## Books and e-Books
 Effective Computation in Physics
 <br>
 http://physics.codes/
@@ -45,6 +49,14 @@ http://physics.codes/
 Teaching and Learning with Jupyter
 <br>
 https://jupyter4edu.github.io/jupyter-edu-book/
+
+Python for Astronomers
+<br>
+https://prappleizer.github.io/
+
+Structuring Your Project — The Hitchhiker's Guide to Python
+<br>
+https://docs.python-guide.org/writing/structure/
 
 ## Articles
 Why Jupyter is data scientists’ computational notebook of choice
@@ -56,4 +68,7 @@ Plotting my thesis with Jupyter
 <br>
 http://harpolea.github.io/2018-05-03-jupyter
 
+N-body simulations in Python
+<br>
+https://coil.com/p/whydoitweet/Small-Sims-6-Modelling-a-stars-and-planets/VDPptI9ie
 
