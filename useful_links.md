@@ -58,6 +58,10 @@ Structuring Your Project — The Hitchhiker's Guide to Python
 <br>
 https://docs.python-guide.org/writing/structure/
 
+Python code for C. M. Bishop's book: "Pattern Recognition and Machine Learning"
+<br>
+https://github.com/ctgk/PRML
+
 ## Articles
 Why Jupyter is data scientists’ computational notebook of choice
 <br>
