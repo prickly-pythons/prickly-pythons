@@ -78,4 +78,5 @@ https://coil.com/p/whydoitweet/Small-Sims-6-Modelling-a-stars-and-planets/VDPptI
 
 ## Data
 COVID-19 analysis
+<br>
 https://github.com/Princeton-Election-Consortium/covid-19
