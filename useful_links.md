@@ -76,3 +76,6 @@ N-body simulations in Python
 <br>
 https://coil.com/p/whydoitweet/Small-Sims-6-Modelling-a-stars-and-planets/VDPptI9ie
 
+## Data
+COVID-19 analysis
+https://github.com/Princeton-Election-Consortium/covid-19
